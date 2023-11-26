@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background: #F6F8FF;
+}
+
+.container {
+    margin-left: 22.8175em;
+    margin-top: 9em;
+    margin-right: 22.8175em;
+    margin-bottom: 14.1667em;
+}
+
+.devfinder {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.25em;
+}
+
+.devfinder h1 {
+    margin-right: 19.75em;
+    color: #222731;
+    font-family: 'Space Mono';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.devfinder p {
+    width: 40px;
+    height: 19px;
+    color: #697C9A;
+    text-align: right;
+    font-family: 'Space Mono';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+.devfinder svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+}
+
+button {
+    align-items: center;
+}
+
+.search {
+    margin-bottom: 1.5em;
+    display: flex;
+    align-items: center;
+    width: 730px;
+    height: 69px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+}
+
+.search svg {
+    flex-direction: row;
+    width: 24.058px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 23px;
+    margin-bottom: 22px;
+    margin-left: 2em;
+}
+
+.search p {
+    color: #4B6A9B;
+    font-family: 'Space Mono';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    justify-content: center;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+button {
+    margin-top: 9.5px;
+    margin-bottom: 9.5px;
+    color: #FFF;
+    margin-left: 17em;
+    margin-right: px;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 107px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #0079FF;
+    border: 1px solid #0079FF;
+}
+
+.octocat {
+    display: flex;
+    width: 730px;
+    height: 419px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+}
+
+.octocat img {
+    flex-shrink: 0;
+    margin-top: 3em;
+    margin-left: 3em;
+    width: 117px;
+    height: 117px;
+    flex-shrink: 0;
+}
+
+.octocat .cat {
+    color: #2B3442;
+    font-family: 'Space Mono';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 26px;
+    margin-right: 2.5em;
+    margin-bottom: 1em;
+}
+
+.content {
+    width: 480px;
+    height: 100px;
+    margin-top: 44px;
+    margin-left: 12px;
+}
+
+
+.content .date {
+    color: #697C9A;
+    text-align: right;
+    font-family: 'Space Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 166px;
+    height: 22px;
+    margin-left: 10px;
+    margin-right: 22px;
+}
+
+.content .social {
+    color: #0079FF;
+    font-family: 'Space Mono';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 1.5em;
+    margin-right: 24px;
+}
+
+.content .about {
+    width: 480px;
+    color: #4B6A9B;
+    font-family: 'Space Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-left: 2em;
+}
+.statistics {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    width: 480px;
+    height: 185px;
+    flex-shrink: 0;
+    margin-top: 2em;
+}
+
+.statistics ul {
+    display: flex;
+    list-style: none;
+    width: 480px;
+    height: 85px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F6F8FF;
+    align-items: center;
+}
+
+.statistics .title {
+    color: #4B6A9B;
+    font-family: 'Space Mono';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 13px;
+    margin-right: 19px;
+}
+
+.statistics .total {
+    color: #2B3442;
+    font-family: 'Space Mono';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 22px;
+    margin-right: 33px;
+    padding: 5px;
+}
+
+.statistics .repos {
+    margin-left: 1em;
+}
+
+.statistics .follow {
+    margin-left: 1.5875em;
+}
+.address {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.SanF {
+    width: 13.753px;
+    height: 20px;
+    margin-right: 7.1em;
+}
+
+.SanF svg {
+    flex-shrink: 0;
+}
+
+.address .city {
+    color: #4B6A9B;
+    font-family: 'Space Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: -6.5em;
+    margin-top: 37px;
+    margin-right: 9em;  
+}
+.available {
+    width: 20px;
+    height: 16.25px;
+}
+
+
+.available .null {
+    color: #4B6A9B;
+    font-family: 'Space Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 15px;
+    margin-right: 22px;
+}
+.link {
+    width: 19.991px;
+    height: 19.945px;
+    margin-right: 3.875em;
+}
+
+.link .git {
+    color: #4B6A9B;
+    font-family: 'Space Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 15px;
+    margin-right: 22px;
+}
+
+.github {
+    width: 20px;
+    height: 19.852px;
+    flex-shrink: 0;
+}
+
+.github .handle {
+    color: #4B6A9B;
+    font-family: 'Space Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 15px;
+    margin-right: 22px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 450px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    body {
+        width: 375px;
+        height: 777px;
+        background: #F6F8FF;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .container {
+        border: 2px solid blue;
+    }
+
+    .devfinder {
+        width: 327px;
+        height: 38px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 121px;
+        border: 2px solid green;
+    }
+
+    .devfinder h1 {
+        color: #222731;
+        font-family: 'Space Mono';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-left: 26px;
+        border: 2px solid red;
+    }
+
+    .devfinder p {
+        color: #4B6A9B;
+        text-align: right;
+        font-family: 'Space Mono';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.5px;
+        margin-left: 5px;
+        margin-right: 10px;
+        margin-bottom: 0.45em;
+        border: 2px solid red;
+    }
+
+    .devfinder span{
+        width: 20px;
+        height: 20px;
+        margin-left: -8em;
+    }
+
+    .search {
+        display: flex;
+        flex-direction: row;
+        width: 327px;
+        height: 60px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #FEFEFE;
+        box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+        border: 2px solid green;
+    }
+
+    .search svg {
+        width: 20.048px;
+        height: 20px;
+        flex-shrink: 0;
+        margin-left: 1em;
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+    }
+    .search p {
+        width: 184px;
+        height: 25px;
+        color: #4B6A9B;
+        font-family: 'Space Mono';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        margin-top: 18px;
+        margin-bottom: 17px;
+        margin-right: 7px;
+        border: 2px solid red;
+    }
+    .search button {
+        width: 84px;
+        height: 46px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #0079FF;
+        margin-left: 1px;
+    }
+
+    .octocat {
+        width: 327px;
+        height: 517px;
+        flex-shrink: 0;
+        border-radius: 15px;
+        background: #FEFEFE;
+        box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+        border: 2px solid red;
+    }
+}
