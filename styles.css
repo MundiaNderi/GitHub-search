@@ -98,8 +98,7 @@ button {
     margin-bottom: 9.5px;
     color: #FFF;
     margin-left: 17em;
-    margin-right: px;
-    font-family: Space Mono;
+    font-family: 'Space Mono';
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -153,6 +152,7 @@ button {
 
 .content .date {
     color: #697C9A;
+    display: inline-block;
     text-align: right;
     font-family: 'Space Mono';
     font-size: 15px;
@@ -199,6 +199,7 @@ button {
 
 .statistics ul {
     display: flex;
+    flex-direction: row;
     list-style: none;
     width: 480px;
     height: 85px;
@@ -239,8 +240,13 @@ button {
 .statistics .follow {
     margin-left: 1.5875em;
 }
+
+.statistics .following s{
+    margin-right: 83px;
+    margin-top: 15px;
+}
 .address {
-    margin-top: 35px;
+    margin-top: -5em;
     margin-bottom: 10px;
 }
 
@@ -261,9 +267,9 @@ button {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: -6.5em;
     margin-top: 37px;
-    margin-right: 9em;  
+    border-radius: 2px solid red;
+    margin-left: 1em;
 }
 .available {
     width: 20px;
@@ -280,6 +286,10 @@ button {
     line-height: normal;
     margin-left: 15px;
     margin-right: 22px;
+}
+
+.available svg {
+    margin-left: 1.5em;
 }
 .link {
     width: 19.991px;
@@ -334,7 +344,8 @@ button {
     }
 
     .container {
-        border: 2px solid blue;
+        display: flex;
+        flex-direction: column;
     }
 
     .devfinder {
@@ -343,8 +354,7 @@ button {
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        gap: 121px;
-        border: 2px solid green;
+        gap: 115px;
     }
 
     .devfinder h1 {
@@ -354,8 +364,8 @@ button {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        margin-left: 26px;
-        border: 2px solid red;
+        margin-left: 6px;
+        margin-right: 4px;
     }
 
     .devfinder p {
@@ -368,15 +378,14 @@ button {
         line-height: normal;
         letter-spacing: 2.5px;
         margin-left: 5px;
-        margin-right: 10px;
-        margin-bottom: 0.45em;
-        border: 2px solid red;
+        margin-right: 5px;
+        margin-bottom: 0.45em;        
     }
 
     .devfinder span{
         width: 20px;
         height: 20px;
-        margin-left: -8em;
+        margin-left: -7em;
     }
 
     .search {
@@ -388,7 +397,6 @@ button {
         border-radius: 15px;
         background: #FEFEFE;
         box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
-        border: 2px solid green;
     }
 
     .search svg {
@@ -404,14 +412,13 @@ button {
         height: 25px;
         color: #4B6A9B;
         font-family: 'Space Mono';
-        font-size: 13px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 25px;
         margin-top: 18px;
         margin-bottom: 17px;
-        margin-right: 7px;
-        border: 2px solid red;
+        margin-right: 10px;
     }
     .search button {
         width: 84px;
@@ -429,6 +436,217 @@ button {
         border-radius: 15px;
         background: #FEFEFE;
         box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
-        border: 2px solid red;
+    }
+
+    .octocat img {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 70px;
+        height: 70px;
+        flex-shrink: 0;
+        margin-left: 24px;
+        margin-top: 2.5em;
+    }
+
+    .octocat .cat {
+        color: #2B3442;
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-left: 16px;
+        margin-right: 24px;
+    }
+
+    .octocat .social {
+        margin-left: 13px;
+        margin-right: 19px;
+        color: #0079FF;
+        font-family: 'Space Mono';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .content .date {
+        margin-top: 2px;
+        display: block;
+    }
+
+    .content .social {
+        margin-top: 2px;
+        margin-left: 13px;
+        margin-right: 19px;
+    }
+    .content .about {
+        width: 279px;
+        margin-left: 13px;
+        margin-right: 25px;
+        color: #4B6A9B;
+        font-family: 'Space Mono';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        margin-left: -5em;
+    }
+
+    .statistics {
+        display: flex;
+        display: inline-block;
+        width: 270px;
+        height: 85px;
+        border-radius: 15px;
+        background: #FEFEFE;
+        margin-left: -5em;
+        overflow: hidden;
+    }
+
+    .statistics .title {
+        margin-left: 5px;
+        margin-right: 3px;
+        color: #4B6A9B;
+        text-align: center;
+        font-family: 'Space Mono';
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .statistics .total {
+        margin-left: 16px;
+        margin-right: 24px;
+        color: #2B3442;
+        text-align: center;
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .statistics .repos {
+        margin-left: 15px;
+        margin-top: 18px;
+        margin-left: 11px;
+        color: #4B6A9B;
+        text-align: center;
+        font-family: 'Space Mono';
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .statistics .follow {
+        margin-top: 18px;
+        width: 81px;
+        margin-left: 11px;
+        margin-right: 10px;
+        color: #4B6A9B;
+        text-align: center;
+        font-family: 'Space Mono';
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .statistics .following {
+        margin-right: 14px;
+        margin-top: 18px;
+        margin-left: 11px;
+        margin-right: 16px;
+        color: #4B6A9B;
+        text-align: center;
+        font-family: 'Space Mono';
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .SanF svg {
+        width: 13.753px;
+        height: 20px;
+        flex-shrink: 0;
+    }
+
+    .address {
+        margin-top: 2em;
+        margin-left: -5em;
+        margin-right: 5em;
+    }
+
+    .address .socials {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .address .city {
+    color: #4B6A9B;
+    font-family: 'Space Mono';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 37px;
+    margin-right: -2em;
+}
+.address .null {
+    color: #4B6A9B;
+    font-family: 'Space Mono';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 13px;
+    margin-right: 19px;
+}
+    .socials {
+        margin-left: -5em;
+        margin-right: 5em;
+    }
+
+    .socials .git {
+        color: #4B6A9B;
+        font-family: 'Space Mono';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 13px;
+        margin-right: 13px;
+        gap: 1em;
+        margin-top: 4px;
+    }
+
+    .socials svg {
+        margin-top: 4px;
+    }
+
+    .socials .handle {
+        color: #4B6A9B;
+        font-family: 'Space Mono';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 13px;
+        margin-right: 13px;
+    }
+
+    .available svg {
+        margin-left: -6px;
+        margin-top: 4px;
+    }
+
+    .available .null {
+        margin-top: 4px;
     }
 }
