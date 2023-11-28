@@ -13,8 +13,9 @@
     margin-top: 9em;
     margin-right: 22.8175em;
     margin-bottom: 14.1667em;
-    overflow: hidden;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .devfinder {
@@ -47,6 +48,10 @@
     letter-spacing: 2.5px;
     justify-content: center;
     margin-top: 0.5em;
+    align-items: center;
+    margin-right: 1em;
+    margin-left: -0.5em;
+    margin-bottom: 0.5em;
 }
 
 .devfinder svg {
@@ -63,7 +68,6 @@ button {
     margin-bottom: 1.5em;
     display: flex;
     align-items: center;
-    width: 730px;
     height: 69px;
     flex-shrink: 0;
     border-radius: 15px;
@@ -92,13 +96,14 @@ button {
     margin-top: 22px;
     margin-bottom: 22px;
     margin-left: 1em;
+    margin-right: 1em;
 }
 
 button {
     margin-top: 9.5px;
     margin-bottom: 9.5px;
     color: #FFF;
-    margin-left: 17em;
+    margin-left: 15em;
     font-family: 'Space Mono';
     font-size: 16px;
     font-style: normal;
@@ -114,7 +119,6 @@ button {
 
 .octocat {
     display: flex;
-    width: 730px;
     height: 419px;
     flex-shrink: 0;
     border-radius: 15px;
@@ -186,7 +190,7 @@ button {
     font-weight: 400;
     line-height: 25px;
     margin-top: 20px;
-    margin-left: 2em;
+    margin-left: 1.5em;
 }
 .statistics {
     display: flex;
@@ -239,12 +243,11 @@ button {
 }
 
 .statistics .follow {
-    margin-left: 1.5875em;
+    margin-left: 1.75em;
 }
 
-.statistics .following s{
+.statistics .following {
     margin-right: 83px;
-    margin-top: 15px;
 }
 .address {
     margin-top: -5em;
@@ -269,7 +272,6 @@ button {
     font-weight: 400;
     line-height: normal;
     margin-top: 37px;
-    border-radius: 2px solid red;
     margin-left: 1em;
 }
 .available {
@@ -326,6 +328,128 @@ button {
     margin-right: 22px;
 }
 
+/* Dark Mode */
+.dark-mode .devfinder {
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+
+.dark-mode .devfinder h1 {
+    color: #FFF;
+    font-family: 'Space Mono';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.dark-mode .devfinder p {
+    color: #FFF;
+    text-align: right;
+    font-family: 'Space Mono';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.5px;
+    margin-right: 1em;
+    margin-left: -0.5em;
+    margin-bottom: 0.5em;
+}
+
+.dark-mode .devfinder svg {
+    margin-top: 0.4em;
+}
+
+.dark-mode .devfinder svg .dark-mode .search {
+    width: 327px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #1E2A47;
+    align-items: center;
+    border: 2px solid red;
+}
+
+.dark-mode .search p {
+    color: #FFF;
+    font-family: 'Space Mono';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+ .dark-mode .octocat .cat {
+    color: #FFF;
+    font-family: 'Space Mono';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+ }
+
+ .dark-mode .octocat .date {
+    color: #FFF;
+    text-align: right;
+    font-family: 'Space Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ }
+
+  .dark-mode .octocat .social {
+    color: #0079FF;
+    font-family: 'Space Mono';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+   .dark-mode .octocat .about {
+    color: #FFF;
+    font-family: 'Space Mono';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+   }
+
+   .dark-mode .address .city,
+   .dark-mode .address .null,
+   .dark-mode .socials .git,
+   .dark-mode .socials .handle
+    {
+    color: #FFF;
+        font-family: 'Space Mono';
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+   }
+
+   .dark-mode .statistics .total {
+    color: #FFF;
+    font-family: 'Space Mono';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+   }
+
+    .dark-mode .title .repos,
+    .dark-mode .title .follow,
+    .dark-mode .title .following{
+        color: #FFF;
+        font-family: 'Space Mono';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
 /* Mobile */
 @media only screen and (max-width: 450px) {
 
@@ -354,10 +478,6 @@ button {
     .devfinder {
         width: 327px;
         height: 38px;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        gap: 115px;
     }
 
     .devfinder h1 {
@@ -367,8 +487,7 @@ button {
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        margin-left: 6px;
-        margin-right: 4px;
+        margin-right: 5em;
     }
 
     .devfinder p {
@@ -380,15 +499,13 @@ button {
         font-weight: 700;
         line-height: normal;
         letter-spacing: 2.5px;
-        margin-left: 5px;
-        margin-right: 5px;
         margin-bottom: 0.45em;        
     }
 
     .devfinder span{
         width: 20px;
         height: 20px;
-        margin-left: -7em;
+        color: hsla(217, 35%, 45%, 1);
     }
 
     .search {
@@ -651,4 +768,101 @@ button {
     .available .null {
         margin-top: 4px;
     }
+
+    /* Dark Mode */
+    .dark-mode .search p {
+        color: #FFF;
+        font-family: 'Space Mono';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        margin-left: -1em;
+     }
+
+    .dark-mode .search svg {
+        margin-right: 1em;
+    }
+
+    .dark-mode .search .button {
+        color: #FFF;
+        font-family: 'Space Mono';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .dark-mode .octocat .cat {
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 1em;
+    }
+    .dark-mode .octocat .date {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .dark-mode .octocat .social {
+        color: #0079FF;
+        font-family: 'Space Mono';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .dark-mode .octocat .about {
+        color: #FFF;
+        font-family: 'Space Mono';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+    }
+
+    .dark-mode .statistics .title {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Space Mono';
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-right: -0.5em;
+    }
+
+    .dark-mode .statistics .total {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Space Mono';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .dark-mode .address .SanF {
+        color: #FFF;
+        font-family: 'Space Mono';
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-right: 12em;
+    }
+
+    .dark-mode .address .null {
+        color: #FFF;
+        font-family: 'Space Mono';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 13px;
+        margin-right: 19px;
+    }
 }
+
