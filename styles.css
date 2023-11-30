@@ -85,7 +85,7 @@ button {
     margin-left: 2em;
 }
 
-.search p {
+.search input {
     color: #4B6A9B;
     font-family: 'Space Mono';
     font-size: 18px;
@@ -97,6 +97,8 @@ button {
     margin-bottom: 22px;
     margin-left: 1em;
     margin-right: 1em;
+    width: 14.5em;
+    border: none;
 }
 
 button {
@@ -527,7 +529,7 @@ button {
         margin-top: 1.25em;
         margin-bottom: 1.25em;
     }
-    .search p {
+    .search input {
         width: 184px;
         height: 25px;
         color: #4B6A9B;

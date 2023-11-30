@@ -100,38 +100,42 @@
           </svg>
         </div>
         <div>
-          <p>Search GitHub username…</p>
+          <input
+            type="text"
+            id="search-text"
+            placeholder="Search GitHub username…"
+          />
         </div>
         <div>
-          <button>Search</button>
+          <button id="search-box">Search</button>
         </div>
       </div>
 
       <!--Octocat-->
       <div id="octocat" class="octocat">
-        <img src="/images/Oval.png" />
+        <img id="avatar" src="/images/Oval.png" />
         <div class="content">
           <span>
-            <strong class="cat">The Octocat</strong>
-            <p class="date">Joined 25 Jan 2011</p>
+            <strong id="name" class="cat">The Octocat</strong>
+            <p id="created" class="date">Joined 25 Jan 2011</p>
           </span>
-          <p class="social">@octocat</p>
-          <p class="about">This profile has no bio</p>
+          <p id="handle" class="social">@octocat</p>
+          <p id="bio" class="about">This profile has no bio</p>
 
           <!--Statistics-->
           <div id="" class="statistics">
             <ul id="statistics">
               <li class="title">
                 <p class="repos">Repos</p>
-                <p class="total">8</p>
+                <p id="repo" class="total">8</p>
               </li>
               <li class="title">
                 <p class="follow">Followers</p>
-                <p class="total">3939</p>
+                <p id="follow" class="total">3939</p>
               </li>
               <li class="title">
                 <p class="following">Following</p>
-                <p class="total">9</p>
+                <p id="following" class="total">9</p>
               </li>
             </ul>
           </div>
@@ -151,7 +155,7 @@
                   fill="#4B6A9B"
                 />
               </svg>
-              <span class="city">San Francisco</span>
+              <span id="city" class="city">San Francisco</span>
             </span>
             <span class="available">
               <svg
@@ -166,7 +170,7 @@
                   fill="#4B6A9B"
                 />
               </svg>
-              <span class="null">Not Available</span>
+              <span id="twitter" class="null">Not Available</span>
             </span>
           </div>
 
