@@ -99,8 +99,11 @@ button {
     margin-right: 1em;
     width: 14.5em;
     border: none;
+    outline-width: 0
 }
-
+.field input {
+    outline-width: 0
+}
 button {
     margin-top: 9.5px;
     margin-bottom: 9.5px;
